@@ -1,0 +1,143 @@
+@media screen and (max-width: 1000px) {
+  .container {
+    width: var(--container-width-md);
+    /* background: rgba(255, 0, 0, 0.253); */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: var(--container-width-sm);
+    /* background: rgba(43, 255, 0, 0.253); */
+  }
+
+  .guideContainer .teacherStat {
+    flex-direction: column;
+  }
+
+  .popularContainer article {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 670px) {
+  nav button {
+    display: inline-block;
+    background: transparent;
+    font-size: 1.4rem;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+  }
+
+  nav button#close-menu-button {
+    display: none;
+  }
+
+  .navMenu li {
+    margin-bottom: 10px;
+  }
+
+  #navUl {
+    display: none;
+    background: var(--firstCl);
+    z-index: 1;
+    box-shadow: 2px 2px 3px #11111198;
+    width: 100%;
+    padding: 20px 20px;
+    top: 42.5px;
+    right: 0px;
+    position: absolute;
+  }
+
+  .navContainer .btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navContainer {
+    position: relative;
+
+    /* align-items: center; */
+  }
+  .navMenu,
+  .navContainer > ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .howContent .right {
+    width: 15rem;
+  }
+  .heroSection {
+    padding: 6rem 0 1rem 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .heroContainer .left {
+    text-align: center;
+    align-items: center;
+  }
+
+  .heroContainer {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .footContainer {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+
+  footer ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.btyn {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  width: 75px;
+  height: 35px;
+  display: block;
+  background: var(--firstCl);
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  position: absolute;
+}
+
+label span {
+  height: 30px;
+  width: 30px;
+  background: #ffffff;
+  border-radius: 50%;
+  margin-left: 3px;
+  /* color: #fff; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  transition: margin-left 0.5s;
+}
+
+#btnn {
+  display: none;
+}
+
+#btnn:checked + label span {
+  margin-left: 43px;
+  /* background: #5bceb5; */
+  color: #fff;
+}

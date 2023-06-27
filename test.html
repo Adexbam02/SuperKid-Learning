@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: #000;
+        }
+
+        label {
+            width: 80px;
+            height: 40px;
+            display: block;
+            background: #fff;
+            border-radius: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        label span {
+            height: 34px;
+            width: 34px;
+            background: #000;
+            border-radius: 50%;
+            margin-left: 3px;
+            /* color: #fff; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            transition: margin-left 0.5s;
+        }
+
+        #btnn {
+            display: none;
+        }
+
+        #btnn:checked+label span {
+            margin-left: 43px;
+            background: #5bceb5;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="checkbox" id="btnn">
+    <label for="btnn"><span>&#10003;</span></label>
+
+    <script>
+        const btn = document.getElementById('btnn')
+
+        btn.addEventListener("click", () => {
+            console.log('fgjhk')
+        })
+    </script>
+</body>
+
+</html>
