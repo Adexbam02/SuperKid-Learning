@@ -221,7 +221,7 @@ nav button {
   width: 100%;
   height: 100%;
   opacity: 0.1;
-  background-image: url(/doodle.jpg);
+  background-image: url(doodle.jpg);
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
@@ -313,7 +313,7 @@ nav button {
   width: 100%;
   height: 100%;
   opacity: 0.1;
-  background-image: url(/doodle2.jpg);
+  background-image: url(doodle2.jpg);
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
@@ -515,7 +515,7 @@ nav button {
   width: 75%;
   border-radius: 20px;
   /* background: #1ffc4f80; */
-  background: url(/background-with-abstract-circle-design-elements.jpg);
+  background: url(background-with-abstract-circle-design-elements.jpg);
   background-size: 1000px;
 }
 
